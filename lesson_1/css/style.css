@@ -1,0 +1,127 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+a:hover {
+    color: #D1A954;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.header .img-logo {
+    margin-right: auto;
+}
+
+.header .navigation > ul {
+    display: flex;
+}
+
+.header .navigation > ul > li {
+    padding: .5rem 1rem;
+}
+
+.header .navigation > ul > li.active {
+    border: 1px solid #D1A954;
+}
+
+.header .burder-menu {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.header .burder-menu > hr {
+    min-width: 2rem;
+    border: none;
+    height: 2px;
+    background: black;
+}
+
+/* section 1 */
+
+.slider .carousel {
+    display: flex;
+    margin: 2rem auto;
+}
+
+.carousel .slide {
+    min-height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 0 .5rem;
+}
+
+.carousel .slide_1 {
+    background: url("../img/slider_1.png") no-repeat center center;
+}
+.carousel .slide_2 {
+    background: url("../img/slider_2.png") no-repeat center center;
+}
+.carousel .slide_3 {
+    background: url("../img/slider_3.png") no-repeat center center;
+}
+
+.carousel .background-description {
+    opacity: .9;
+    background: #D1A954E5;
+    padding: .5rem;
+}
+
+.carousel .background-description .description {
+    padding: 2rem;
+    border: 1px solid white;
+    margin: 1rem;
+}
+
+.slider .next-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.slider .next-slide > hr {
+    margin: .5rem;
+    min-width: 10rem;
+    border: none;
+    height: 2px;
+    background: #E5E5E5;
+}
+
+.slider .next-slide > div {
+    cursor: pointer;
+}
+
+/* section 2 */
+
+.main .restaurant {
+    margin: 10rem 0 5rem 0;
+}
+
+.restaurant .restaurant-title {
+    text-align: center;
+}
+
+.restaurant .restaurant-video {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.restaurant .restaurant-video img[alt="video-play"] {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 43%;
+    cursor: pointer;
+}
