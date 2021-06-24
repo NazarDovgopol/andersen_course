@@ -9,7 +9,10 @@ a {
 
 body {
     margin: 0;
+    font-size: 1rem;
 }
+
+/* header */
 
 .header {
     background: url(../img/header.png) no-repeat center center;
@@ -24,6 +27,8 @@ body {
 
 .header .navigation > ul {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding-top: 2rem;
 }
 
@@ -90,8 +95,9 @@ body {
 .header .big-theatre {
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 20rem 0 12rem 10rem;
+    margin: 19.7rem 0 12rem 10rem;
 }
 
 .big-theatre .big-theatre-info {
@@ -118,12 +124,14 @@ body {
 .big-theatre .big-theatre-img img[alt="theatre-front"] {
     position: relative;
     z-index: 10;
+    max-width: 400px;
 }
 
 .big-theatre .big-theatre-img img[alt="theatre-back"] {
     position: absolute;
     top: 1rem;
     left: 1rem;
+    max-width: 400px;
 }
 
 .big-theatre-img .pagination  {
@@ -146,12 +154,335 @@ body {
 
 .pagination .pagination-prev h3 {
     margin-left: 1rem;
+    cursor: pointer;
+}
+
+.pagination .pagination-prev img {
+    cursor: pointer;
 }
 
 .pagination .pagination-next h3 {
     margin-right: 1rem;
+    cursor: pointer;
 }
 
 .pagination .pagination-next img {
     margin-right: -1rem;
+    cursor: pointer;
+}
+
+/* main */
+.main {
+    background: #333333;
+    color: white;
+}
+
+.main span {
+    color: #D1A954;
+}
+
+/* info-theatre */
+
+.main .info-theatre h1 {
+    margin-top: 0;
+    padding: 6rem 0 3rem 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.info-theatre .info-theatre-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.info-theatre-description .info-theatre-description-best {
+    max-width: 33%;
+    margin-bottom: 2rem;
+}
+
+.info-theatre-description .info-theatre-description-number {
+    margin: 0 4rem 2rem 2rem;
+}
+
+/* staging */
+
+.main .staging h1 {
+    margin-top: 0;
+    padding: 6rem 0 3rem 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.staging .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.carousel .carousel-item {
+    position: relative;
+    width: 350px;
+    height: 550px;
+    opacity: .65;
+    margin: 1rem;
+}
+
+.carousel .carousel-item:hover {
+    opacity: 1;
+}
+
+
+.carousel .carousel-item-1 {
+    background: url(../img/carousel-item-1.png) no-repeat center center;
+    background-size: cover;
+}
+.carousel .carousel-item-2 {
+    background: url(../img/carousel-item-2.png) no-repeat center center;
+    background-size: cover;
+}
+.carousel .carousel-item-3 {
+    background: url(../img/carousel-item-3.png) no-repeat center center;
+    background-size: cover;
+}
+.carousel .carousel-item-4 {
+    background: url(../img/carousel-item-4.png) no-repeat center center;
+    background-size: cover;
+}
+
+.carousel .carousel-item img {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    display: none;
+    width: 5rem;
+    cursor: pointer;
+}
+
+.carousel .carousel-item:hover img {
+    display: block;
+}
+
+.carousel .carousel-item:hover h3,
+.carousel .carousel-item:hover h4 {
+    display: none;
+} 
+
+.carousel .carousel-item h3 {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.carousel .carousel-item h4 {
+    position: absolute;
+    bottom: 12%;
+    left: -6%;
+    transform: rotateZ(-90deg);
+}
+
+/* review */
+
+.main .review {
+    background: url(../img/background-review.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    margin: 5rem auto 0;
+    max-width: 50%;
+}
+
+.review .stars {
+    margin-left: 7rem;
+    max-width: 31%;
+}
+
+/* partners */
+
+.main .partners h1 {
+    margin-top: 0;
+    padding: 7rem 0 3rem 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.partners .gazprom {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 50%;
+    flex-wrap: wrap;
+}
+
+.partners .gazprom img {
+    padding: 1rem 2rem;
+}
+
+/* maecenas */
+
+.main .maecenas h1 {
+    margin-top: 0;
+    padding: 7rem 0 3rem 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.maecenas .contacts {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* .contacts .contacts-info {
+    margin-right: 8rem;
+} */
+
+.contacts .contacts-date {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contacts .contacts-date input,
+.contacts .contacts-date textarea {
+    color: white;
+    background: #444444;
+    padding: .5rem 1rem;
+    margin: 1rem;     
+}
+
+.contacts .warning {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.contacts .warning p {
+    color: #989898;
+    margin-left: 1rem;
+    padding-right: 8rem;
+}
+
+.contacts .warning button {
+    border: 0;
+    cursor: pointer;
+    color: white;
+    padding: .8rem 2rem;
+    background: #D1A954;
+}
+
+/* footer */
+
+.footer {
+    padding: 3rem 0 1rem 0;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.footer hr {
+    border: 0;
+    height: 1px;
+    background: #565656;
+ }
+
+.footer .additional-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #989898;
+}
+
+/* media */
+
+@media (max-width: 577px) {
+
+    .info-theatre-description .info-theatre-description-best {
+        max-width: 70%;
+    }
+
+    .contacts .warning {
+        justify-content: center;
+    }
+
+    .contacts .warning p {
+        padding-right: 0rem;
+        margin-bottom: 1rem;
+    }
+
+    .review .stars {
+        margin-right: 3rem;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 769px) {
+    body {
+        font-size: .7rem;
+    }
+
+    /* header */
+
+    .header .left-description {
+        display: none;
+    }
+    .header .big-theatre {
+        margin: 6rem 0 2rem 0rem;
+    }
+
+    .header .big-theatre .big-theatre-img img[alt="theatre-front"] {
+        max-width: 180px;
+    }
+    
+    .header .big-theatre .big-theatre-img img[alt="theatre-back"] {
+        max-width: 180px;
+    }
+
+    /* body */
+
+    .review .stars {
+        margin-left: 3rem;
+    }
+
+    .contacts .warning {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .contacts .warning button {
+        margin: 1rem;
+    }
+    
+}
+
+@media (max-width: 993px) {
+    body {
+        font-size: .8rem;
+    }
+
+    /* header */
+
+    .header .left-description .contact {
+        margin-top: 28.5rem;
+    }
+    .big-theatre .big-theatre-img img[alt="theatre-front"] {
+        max-width: 250px;
+    }
+    
+    .big-theatre .big-theatre-img img[alt="theatre-back"] {
+        max-width: 250px;
+    }
+
+    .maecenas .contacts {
+        max-width: 70%;
+    }
+
+    
 }
